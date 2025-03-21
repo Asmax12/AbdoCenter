@@ -56,104 +56,110 @@ a {
 /* End Global Rules  */
 /* Start Header*/
 nav {
-  width: 100%;
+  position: relative;
+  padding: 16px;
+  height: 72px;
   background-color: var(--main-color);
-  padding: 15px;
-}
-@media (max-width: 992px) {
-  nav {
-    padding: 16px 0;
-  }
 }
 nav .container {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
-nav .logo {
+nav .logo a {
   color: white;
   font-size: 20px;
-  transition: var(--main-transition);
+  font-weight: 500;
+}
+nav .links {
+  display: flex;
+  gap: 32px;
 }
 @media (max-width: 992px) {
-  nav .container {
-    justify-content: space-between;
+  nav .links {
+    display: none;
   }
 }
-nav .toggle-menu {
-  display: none;
+nav .toggle-btn {
   color: white;
   font-size: 24px;
-  padding: 5px 0;
-  margin-right: 16px;
-  font-weight: bold;
-}
-nav .toggle-menu:hover ul {
-  display: flex;
+  cursor: pointer;
+  display: none;
+  transition: var(--main-transition);
 }
 @media (max-width: 992px) {
-  nav .toggle-menu {
+  nav .toggle-btn {
     display: block;
   }
-
 }
-nav ul {
-  display: flex;
-}
-@media (max-width: 992px) {
-  nav ul {
-    display: none;
-  }
-  nav .toggle-menu:hover + ul {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding-top: 15px;
-    background-color: var(--main-color);
-    z-index: 20;
-  }
-  header nav ul li {
-    padding: 15px;
-  }
-}
-nav ul li a.links {
-  display: block;
-  color: rgb(141, 141, 144);
-  font-size: 18px;
-  padding: 15px;
-  transition: var(--main-transition);
-}
-a.links:hover {
-  color: rgb(198, 198, 207);
-}
-nav .sign-up {
-  padding: 8px 24px;
-  border-radius: 10px;
-  border: none;
-  font-size: 20px;
+.action-btn {
   background-color: #ffc107;
-  color: black;
+  color: #212529;
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
   transition: var(--main-transition);
 }
+nav .action-btn:hover {
+  background-color: #e0a800;
+}
+nav .action-btn i {
+  margin-right: 8px;
+}
 @media (max-width: 992px) {
-  nav .sign-up {
+  nav .action-btn {
     display: none;
   }
 }
-nav .sign-up a {
-  transition: 0.3s;
-  color: #212529;
-  font-size: 16px;
+nav a {
+  color: #ffffff80;
+  transition: var(--main-transition);
 }
-nav .sign-up:hover {
-  background-color: #e8ac04;
+nav a:hover {
+  color: #ffffffbf;
 }
-nav .sign-up a > i {
-  padding-right: 5px;
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 73px;
+  width: 100%;
+  padding: 0 16px 16px;
+  z-index: -2;
+  opacity: 0;
+  background-color: var(--main-color);
+  transition: var(--main-transition);
+}
+@media (max-width: 992px) {
+  .dropdown-menu {
+    display: block;
+  }
+}
+.dropdown-menu.open {
+  z-index: 100;
+  opacity: 1;
+}
+.dropdown-menu li {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dropdown-menu .action-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 /* End Header */
 /* Start Landing */
@@ -165,6 +171,7 @@ nav .sign-up a > i {
   position: absolute;
   background-image: url(../images/world.svg);
   background-size: cover;
+  background-position: center;
   width: 80%;
   height: 80%;
   left: 50%;
@@ -241,6 +248,11 @@ nav .sign-up a > i {
   border-radius: 15px;
   margin-top: 16px;
   padding: 0 15px;
+}
+@media (max-width: 767px) {
+  .landing .holder .form-holder {
+    min-width: 75%;
+  }
 }
 .landing .holder .form-holder .form {
   margin: 24px 0;

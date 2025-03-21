@@ -19,6 +19,9 @@ html {
 }
 body {
   font-family: "Noto Kufi Arabic", sans-serif;
+  background-color: var(--main-color);
+}
+body.background {
   background-image: url(../images/x8e2teldxfwxfuof_kzhick_gmmefm.png),
     linear-gradient(to right, #212529, #212529);
   background-size: cover;
@@ -74,6 +77,9 @@ nav .logo a {
   font-size: 20px;
   font-weight: 500;
 }
+nav .logo a:hover {
+  color: white;
+}
 nav .links {
   display: flex;
   gap: 32px;
@@ -112,6 +118,7 @@ nav .toggle-btn {
 }
 nav .action-btn:hover {
   background-color: #e0a800;
+  color: #212529;
 }
 nav .action-btn i {
   margin-right: 8px;
@@ -124,6 +131,7 @@ nav .action-btn i {
 nav a {
   color: #ffffff80;
   transition: var(--main-transition);
+  font-size: 18px;
 }
 nav a:hover {
   color: #ffffffbf;
@@ -563,17 +571,20 @@ nav a:hover {
   font-weight: 500;
   line-height: 1.2;
 }
-.ready button {
+.ready a {
+  display: block;
+  width: fit-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #3ad64c;
-  outline: none;
-  border: none;
   color: white;
   padding: 8px 16px;
   box-shadow: 0px 10px 26px rgba(26, 27, 32, 0.26);
   border-radius: 8px;
   height: 40px;
 }
-.ready button::after {
+.ready a::after {
   font-family: "Font Awesome 5 Free";
   content: "\f061";
   font-weight: 900;

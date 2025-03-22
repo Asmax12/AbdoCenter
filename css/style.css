@@ -19,8 +19,6 @@ html {
 }
 body {
   font-family: "Noto Kufi Arabic", sans-serif;
-
-  /* font-family: "Zain",  "Open Sans",  sans-serif; */
   font-style: normal;
   background-color: var(--main-color);
 }

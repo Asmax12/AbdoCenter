@@ -51,7 +51,329 @@
 
 
                                   <!-- Api  -->
-
+<!-- !made by Mai  -->
+  <!-- !start Api  -->
+<div class="Maioya">
+  <div class="API1">
+    <div>
+      <h2 class="h1api">
+    API Docs
+      </h2>
+    </br>
+    <table border="1">
+  <tr>
+    <td>HTTP Method</td>
+    <td>Post</td>
+  </tr>
+  <tr>
+    <td>API URL</td>
+    <td>http://AbdoCenter.Com/api/v2</td>
+  </tr>
+  <tr>
+    <td>Response format</td>
+    <td>JSON</td>
+  </tr>
+</table>
+     </br> 
+    </div>
+    <div>
+      <h2>
+    Service List
+      </h2>
+<table border="1">
+  <tr>
+    <th>parameters</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Key</td>
+    <td>Your API Key</td>
+  </tr>
+  <tr>
+    <td>action</td>
+    <td>services</td>
+  </tr>
+</table>    
+    </div>
+  <div>
+    <h4>
+    Example response
+    </h4>
+    <div class="Mai">
+      <span>
+    [
+    <center>
+    <div>
+</br>
+{
+</br>
+"service": 1,
+</br>
+"name": "Followers",
+</br>
+"type": "Default",
+</br>
+"category": "First Category",
+</br>
+"rate": "0.90",
+</br>
+"min": "50",
+</br>
+"max": "10000"
+</br>
+},
+</br>
+{
+</br>
+"service": 2,
+</br>
+"name": "Comments",
+</br>
+"type": "Custom Comments",
+</br>
+"category": "Second Category",
+</br>
+"rate": "8"
+</br>
+"min": "10",
+</br>
+"max": "1500"
+</br>
+}
+</br></div>
+</center>
+]
+      </span>
+    </div>
+  </div>
+    <div>
+      <h2>
+      Add order
+      </h2>
+      <div class="border-box">
+  <span class="arrow">Default      ⌄</span>
+</div>
+</br>
+</br>
+<div>
+  <table border="1">
+      <tr>
+    <th>Parameters</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>key </td>
+    <td> Your API Key</td>
+  </tr>
+  <tr>
+    <td>action</td>
+    <td>add</td>
+  </tr>
+  <tr>
+    <td>service</td>
+    <td>service ID</td>
+  </tr>
+  <tr>
+    <td> link</td>
+    <td>link to page</td>
+  </tr>
+  <tr>
+    <td>quantity </td>
+    <td>Needed quantity</td>
+  </tr>
+  <tr>
+    <td>runs (optional) </td>
+    <td> Runs to deliver</td>
+  </tr>
+  <tr>
+    <td>interval (optional) </td>
+    <td>Interval in minutes</td>
+  </tr>
+</table>
+</div>
+    </div>
+    <div>
+          <h4>
+    Example response
+      </h4>
+      <div class="Mai">
+        {
+        </br>
+        <center>
+          <div>
+        "order":23501
+        </br>
+      </div>
+</center>
+        }
+      </div>
+    </div>
+    <div>
+     <h2>
+      Order status
+     </h2> 
+    </div>
+    <div>
+       <table border="1">
+    <tr>
+      <th>Parameters</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>key </td>
+      <td> Your API Key</td>
+    </tr>
+    <tr>
+      <td>action</td>
+      <td>status</td>
+    </tr>
+    <tr>
+      <td>order</td>
+      <td>Dorder ID</td>
+    </tr>
+    </table>
+    </div>
+    <div>
+   <h4>
+   Example response
+  </h4>
+  <div class="Mai">
+    <span>
+    {
+</br>
+"charge": "0.27819",
+</br>
+"start_count": "3572",
+</br>
+"status": "Partial",
+</br>
+"remains": "157",
+</br>
+"currency": "USD"
+</br>
+}
+    </span>
+  </div>
+    </div>
+    <div>
+      <h2>
+    Multiple Orders status
+      </h2>
+      <table border="1">
+  <tr>
+    <th>Parameters</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>key </td>
+    <td> Your API Key</td>
+  </tr>
+  <tr>
+    <td>action</td>
+    <td>status</td>
+  </tr>
+  <tr>
+    <td>orders</td>
+    <td>Orders IDS separated by comma</td>
+  </tr>
+  </table>
+  </div>
+  
+  
+  <div>
+    <h4>
+    Example response
+    </h4>
+    <div class="Mai">
+          <span>
+       {
+       </br>
+       <center>
+  <div>
+       "1": {
+       </br>
+       "charge": "0.27819",
+       </br>
+       "start_count": "3572",
+       </br>
+       "status": "Partial",
+       </br>
+       "remains": "157",
+       </br>
+       "currency": "USD"
+       </br>
+       },
+       </br>
+       "10": {
+       </br>
+       "error": "Incorrect order ID"
+       </br>
+       },
+       </br>
+       "100": {
+       </br>
+       "charge": "1.44219",
+       </br>
+       "start_count": "234",
+       </br>
+       "status": "In progress",
+       </br>
+       "remains": "10",
+       </br>
+       "currency": "USD"
+       </br>
+       }
+  </div>
+</center>
+       </br>
+       }
+       </br>
+     </span>
+    </div>
+    </div>
+    <div>
+      <h2>
+    User balance
+      </h2>
+            <table border="1">
+        <tr>
+          <th>Parameters</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>key </td>
+          <td> Your API Key</td>
+        </tr>
+        <tr>
+          <td>action</td>
+          <td>balance</td>
+        </tr>
+        <tr>
+    
+      </table>
+    </div>
+    <div>
+    <h4>
+    Example response
+    </h4>
+    <div class="Mai">
+      {
+      </br>
+      <center>
+  <div>
+      "balance": "100.84292",
+  </br>
+  "currency": "USD"
+  </br>
+</div>
+</center>
+      }
+      
+    </div>
+    </div>
+  </div>
+  </div>
+<!-- !end Api  -->
 
     
 

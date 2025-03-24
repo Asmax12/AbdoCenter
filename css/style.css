@@ -326,9 +326,10 @@ nav a:hover {
   color: #69788c;
   cursor: pointer;
 }
-.landing .form .btn button {
+.landing .form .btn-landing button {
   color: #212529;
   background-color: #ffc107;
+  border: none;
   padding: 8px 16px;
   text-align: center;
   margin-top: 16px;
@@ -599,6 +600,10 @@ nav a:hover {
 /* Made By Omar goda */
 
 
+
+
+
+
 /* ----  start Sign up ---- */
 /* Made By Asmaa */
 
@@ -738,6 +743,8 @@ nav a:hover {
 
 
 
+
+
 /* start List of Services */
 .start { 
   margin-top: 80px;
@@ -872,6 +879,10 @@ padding-right: 90px;
 /* end List of Services  */
 
 
+
+
+
+
 /* start Api */
 /* Made By mai */
 
@@ -908,7 +919,16 @@ width:100%;
 Mai1{
 height:500px;
 }
+.table1{
+  width: 100%; 
+  padding: 2px;
+  box-sizing: border-box; 
+  border-collapse: collapse;
+  border: 2px solid white; 
+}
+
 /* end  Api */
+
 
 /* ----start footer---- */
   footer {

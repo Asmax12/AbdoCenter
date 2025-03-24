@@ -600,6 +600,7 @@ nav a:hover {
 
 
 /* ----  start Sign up ---- */
+/* Made By Asmaa */
 
 .button-sign-up {
   background-color:var(--main-color);
@@ -871,9 +872,44 @@ padding-right: 90px;
 /* end List of Services  */
 
 
+/* start Api */
+/* Made By mai */
 
+.Maioya{
+  width: 45%; 
+  height: 100%;
+background-color:rgb(41, 42, 47);
+  color: white;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  margin:  auto; 
+  margin-top: 40px;
+  border-radius: 10px;
+  margin-bottom: 150px;
+}
+.Mai{
+background-color:var(--main-color);
+width:100%;
+}
+.border-box {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius:20%;
+}
 
- 
+.arrow {
+  margin-left: 10px;
+}
+Mai1{
+height:500px;
+}
+/* end  Api */
+
 /* ----start footer---- */
   footer {
     width: 100%;

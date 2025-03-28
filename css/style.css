@@ -938,7 +938,109 @@ height:500px;
 }
 
 /* end  Api */
+/* الاسئله المكررره */
 
+.text {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.contaiiner{
+  padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* small */
+@media (min-width:768px) {
+  .contaiiner {
+width: 750px;
+  }
+  
+}
+/* medium */
+@media (min-width:992px) {
+  .contaiiner {
+width: 970px;
+  }
+  
+}
+/*large  */
+@media (min-width:1200px) {
+  .contaiiner {
+width: 1170px;
+  }
+}
+.text .contaiiner {
+   background-color: #292a2f;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.66);
+  text-align: center;
+  position: relative;
+
+}
+
+.text .contaiiner::before {
+  content: "";
+background-image: url(/AbdoCenter/images/world.svg);
+background-size: cover;
+  position: absolute;
+width: 100%;
+height: 100%;
+  top: 300px;
+  left: 100px;
+  z-index: -1;
+  
+  } 
+
+.text .contaiiner .center {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.text .contaiiner .contant {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 2;
+  flex-wrap: wrap;
+ }
+/* شروط الاستخدام */ 
+.terms {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+.terms .contaiiner {
+  text-align: center;
+ background-color: #292a2f;
+color: white;
+border-radius: 20px;
+box-shadow: 0 0 10px rgb(0, 0, 0, 0.66);
+line-height: 2;
+position: relative;
+}
+
+.terms .contaiiner::before {
+  content: "";
+background-image: url(/AbdoCenter/images/world.svg);
+background-size: cover;
+  position: absolute;
+width: 100%;
+height: 100%;
+  top: 400px;
+  left: 500px;
+  right: 500px;
+  z-index: -1;
+  } 
+
+.terms .container p  span {
+  font-weight: bold;
+  font-size: 25px;
+}
+.terms .contaiiner .left {
+  text-align: left;
+}
 
 /* ----start footer---- */
   footer {

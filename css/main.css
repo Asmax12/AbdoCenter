@@ -1,0 +1,405 @@
+/**Start Global Rules  */
+* {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+   }
+   :root {
+     --main-color: #1a1b20;
+     --primary-color: #292a2f;
+     --primary-2-color: yellow;
+     --main-transition: 0.3s;
+     --main-padding-top: 48px;
+     --main-padding-bottom: 48px;
+   }
+   html {
+     scroll-behavior: smooth;
+   }
+   body {
+     font-family: "Noto Kufi Arabic", sans-serif;
+     font-style: normal;
+     background-color: var(--main-color);
+   }
+   body.background {
+     background-image: url(../images/x8e2teldxfwxfuof_kzhick_gmmefm.png),
+       linear-gradient(to right, #212529, #212529);
+     background-size: cover;
+   }
+   ul {
+     list-style: none;
+   }
+   a {
+     text-decoration: none;
+   }
+   .container {
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;
+   }
+   /* Small */
+   @media (min-width: 768px) {
+     .container {
+       width: 750px;
+     }
+   }
+   /* Medium */
+   @media (min-width: 992px) {
+     .container {
+       width: 970px;
+     }
+   }
+   /* Large */
+   @media (min-width: 1200px) {
+     .container {
+       width: 1170px;
+     }
+   }
+   /* End Global Rules  */
+   /* Start Header*/
+   nav {
+     position: relative;
+     padding: 16px;
+     height: 72px;
+     background-color: var(--main-color);
+   }
+   nav .container {
+     width: 100%;
+     height: 100%;
+     max-width: 1200px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+   nav .logo a {
+     color: white;
+     font-size: 20px;
+     font-weight: 500;
+   }
+   nav .logo a:hover {
+     color: white;
+   }
+   nav .links {
+     display: flex;
+     gap: 32px;
+   }
+   @media (max-width: 992px) {
+     nav .links {
+       display: none;
+     }
+   }
+   nav .toggle-btn {
+     color: white;
+     font-size: 24px;
+     cursor: pointer;
+     display: none;
+     transition: var(--main-transition);
+   }
+   @media (max-width: 992px) {
+     nav .toggle-btn {
+       display: block;
+     }
+   }
+   .action-btn {
+     background-color: #ffc107;
+     color: #212529;
+     padding: 8px 24px;
+     border: none;
+     outline: none;
+     border-radius: 8px;
+     font-size: 16px;
+     font-weight: 500;
+     height: 40px;
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+     transition: var(--main-transition);
+   }
+   nav .action-btn:hover {
+     background-color: #e0a80065;
+     color: #212529;
+   }
+   nav .action-btn i {
+     margin-right: 8px;
+   }
+   @media (max-width: 992px) {
+     nav .action-btn {
+       display: none;
+     }
+   }
+   nav a {
+     color: #ffffff80;
+     transition: var(--main-transition);
+     font-size: 18px;
+   }
+   nav a:hover {
+     color: #ffffffbf;
+   }
+   /* Dropdown Menu */
+   .dropdown-menu {
+     display: none;
+     position: absolute;
+     right: 0;
+     top: 73px;
+     width: 100%;
+     padding: 0 16px 16px;
+     z-index: -2;
+     opacity: 0;
+     background-color: var(--main-color);
+     transition: var(--main-transition);
+   }
+   @media (max-width: 992px) {
+     .dropdown-menu {
+       display: block;
+     }
+   }
+   .dropdown-menu.open {
+     z-index: 100;
+     opacity: 1;
+   }
+   .dropdown-menu li {
+     padding: 12px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+   }
+   .dropdown-menu .action-btn {
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+   }
+   /* End Header */
+
+
+
+   /* الاسئله المكررره */
+
+.text {
+     padding-top: 80px;
+     padding-bottom: 100px;
+   }
+   .contaiiner{
+     padding-left: 40px;
+       padding-right: 40px;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   
+   /* small */
+   @media (min-width:768px) {
+     .contaiiner {
+   width: 750px;
+     }
+     
+   }
+   /* medium */
+   @media (min-width:992px) {
+     .contaiiner {
+   width: 970px;
+     }
+     
+   }
+   /*large  */
+   @media (min-width:1200px) {
+     .contaiiner {
+   width: 1170px;
+     }
+   }
+   .text .contaiiner {
+      background-color: #292a2f;
+     color: white;
+     border-radius: 20px;
+     box-shadow: 0 0 10px rgb(0, 0, 0, 0.66);
+     text-align: center;
+     position: relative;
+   margin-left: 250px;
+   line-height:2;
+   
+   }
+   
+   .text::before {
+     content: "";
+     position: absolute;
+     background-image:url(../images/world_faded.svg);
+     bottom: -1000px; 
+     left: 0;
+     width: 100%;
+     height: 200px; 
+     background-position: center;
+     background-size: cover;
+      background-size:100%;  
+   }
+   
+   .text .contaiiner::before {
+     content: "";
+   background-image: url(../AbdoCenter/images/world.svg);
+   background-size: cover;
+     position: absolute;
+   width: 100%;
+   height: 100%;
+     top: 300px;
+     left: 100px;
+     z-index: -1;
+     
+     } 
+   
+   .text .contaiiner .center {
+     text-align: center;
+     font-weight: 400;
+   font-size: 15px;
+     padding-top: 20px;
+     padding-bottom: 10px;
+   }
+   .text .contaiiner .contant {
+     font-size: 15px;
+     font-weight: 400;
+     line-height: 2;
+     flex-wrap: wrap;
+    }
+   /* شروط الاستخدام */ 
+   .terms {
+     padding-top: 80px;
+     padding-bottom: 100px;
+     z-index: -3; 
+   }
+   .terms .contaiiner {
+     text-align: center;
+    background-color: #292a2f;
+   color: white;
+   border-radius: 20px;
+   box-shadow: 0 0 10px rgb(0, 0, 0, 0.66);
+   line-height:3;
+   font-size: 15px;
+   position: relative;
+   }
+   
+   .terms .contaiiner::before {
+     content: "";
+   background-image: url(../AbdoCenter/images/world.svg);
+   background-size: cover;
+     position: absolute;
+   width: 100%;
+   height: 100%;
+     top: 400px;
+     left: 500px;
+     right: 500px;
+     z-index: -1;
+     } 
+   
+   .terms .container p  span {
+     font-weight:400;
+     /* font-size: 20px; */
+   }
+   .terms .contaiiner .left {
+     text-align: left;
+   }
+   
+   .terms::before {
+     content: "";
+     position: absolute;
+     background-image:url(../images/world_faded.svg);
+     bottom: -850px; 
+     left: 0;
+     width: 100%;
+     height: 200px; 
+     background-position: center;
+     background-size: cover;
+      background-size:100%;  
+   }
+   
+   
+   
+   /* ----start footer---- */
+     footer {
+       width: 100%;
+       height: auto;
+       background-color: var(--main-color);
+     }
+     footer .container {
+       background-color: var(--primary-color);
+       display: flex;
+       justify-content: center;
+       flex-direction: row; 
+       width: 100%;
+       height: auto;
+       gap: 30px;
+       padding: 50px;
+     }
+     footer, footer .container {
+       border-top-right-radius: 50px;
+       border-top-left-radius: 50px;
+     }
+     footer .container .text-footer {
+       margin-top: -20px;
+       padding-right: 70px;
+     }
+     footer .container .text-footer a {
+       font-size: 17px;
+       color: #2786ec;
+       line-height: 3;
+       word-break: break-word;
+     }
+     
+     footer .container .text-footer p {
+       color: rgb(141, 141, 144);
+       font-size: 16px;
+       font-weight: 400;
+       line-height: 1.4;
+     }
+     
+     footer .container .link {
+       padding-right: 155px;
+       line-height: 1.8;
+     }
+     footer .container .link a {
+       display: block;
+       color: rgb(141, 141, 144);
+       font-size: 18px;
+       word-break: break-word;
+     }
+     
+     footer .container .link a:hover {
+       color: #254262;
+       transition: var(--main-transition);
+     }
+     
+     footer .container h3 {
+       font-size: 23px;
+       font-weight: 400;
+       color: rgb(255, 255, 255);
+     }
+     
+     footer .payment img {
+       padding-top: 20px;
+     }
+     
+     footer span {
+       display: block;
+       text-align: center;
+       color: rgb(141, 141, 144);
+       padding-top: 20px;
+     }
+     
+     /* ----- Media Query ----- */
+     @media (max-width: 768px) {
+       footer .container {
+         flex-direction: column; 
+       }
+       footer .container .text-footer {
+         padding-right: 0;
+         margin-top: 0;
+       }
+     
+       footer .container .link {
+         padding-right: 0;
+       }
+       
+       footer .payment img {
+         width: 150px;
+             }
+     }
+     /* ---- end footer----  */
+     
+   

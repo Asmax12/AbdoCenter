@@ -1023,7 +1023,7 @@ position: relative;
 
 .terms .contaiiner::before {
   content: "";
-background-image: url(/AbdoCenter/images/world.svg);
+background-image: url(../AbdoCenter/images/world.svg);
 background-size: cover;
   position: absolute;
 width: 100%;

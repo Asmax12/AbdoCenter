@@ -607,10 +607,11 @@ nav a:hover {
 /* ----  start Sign up ---- */
 /* Made By Asmaa */
 
+
 .button-sign-up {
   background-color:var(--main-color);
    background-image:url(../images/world_faded.svg);
-   background-size:90%;  
+   background-size:80%;  
   background-position: center calc(200%);
    background-repeat: no-repeat;  
  }
@@ -619,92 +620,107 @@ nav a:hover {
  display: flex;
  justify-content: center;
  align-items: center;
- gap: 30px;
- height: 100%;
+ /* gap: 30px; */
+ height: auto;
  position: relative;
- top: 120px;
+ top: 80px;
  padding-bottom: 200px;
  padding-left: 50px;
  padding-right: 50px;
  } 
- 
- .form-but{
+
+.form-but {
   background-image: url(../images/pattern.svg);
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
- background-color: var(--primary-color);
- display: flex;
- flex-direction: column;
- gap: 20px;
- width: 550px;
- height: 800px;
- border-radius:20px;
- } 
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 38%;
+  height: 880px;
+  border-radius: 20px;
+  margin: 20px;
+  margin-top: -30px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
- .form-but h3 {
- color: white;
- font-weight: 400;
- font-size: 30px;
- text-align: center;
- padding-top: 20px;
- }
- 
- .input-box {
+.form-but h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+  /* padding-top: 20px; */
+}
+
+.input-box {
+  width: 100%;
   display: flex;
   align-items: center;
- margin-left: 30px;
- }
- 
- .input-box i{
+  padding: 5px;
+  position: relative;
+}
+
+.input-box i {
   position: absolute;
+  left: 15px;
   color: #495057;
-  padding-left: 20px;
   font-size: 20px;
- }
- 
- .form-but .input-sign {
-  width: 95%;
+}
+
+.form-but .input-sign {
+  width: 100%;
   height: 55px;
   border-radius: 10px;
   border: none;
-  padding-left: 60px;
- }
- .form-but .input-sign:hover {
- margin: 5px;
- transition: 0.3s;
- }
- .form-but .check {
- font-size: 20px;
- margin-left: 50px;
- margin-top: 10px;
- color: white;
- }
- .form-but .check a {
-   color: #2786ec;
- }
- .check a:hover {
-   color: #254262;
- }
- .form-but button {
- width: 90%;
- height: 40px;
- border-radius: 10px;
- border: none;
- color: white;
- background-color: rgb(48, 186, 68);
- text-align: center;
- margin-left: 30px;
- margin-top: 80px;
- }
- .form-but button:hover {
-   background-color: rgba(48, 186, 69, 0.327);
-   transition: 0.3s;
- }
+  padding-left: 50px;
+  font-size: 16px;
+}
+
+.form-but .input-sign:hover {
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.form-but .check {
+  font-size: 18px;
+  color: white;
+  padding-left: 10px;
+}
+
+.form-but .check a {
+  color: #2786ec;
+}
+
+.check a:hover {
+  color: #254262;
+}
+
+.form-but button {
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: rgba(82, 230, 105, 0.762);
+  text-align: center;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-but button:hover {
+  background-color: rgba(48, 186, 69, 0.7);
+  transition:  0.3s ease;
+
+}
 
  .container-but .img-but img {
    position: relative;
-   width: 550px;
+  max-width: 100%;
    animation: up-and-down 5s linear infinite;
  }
 
@@ -721,23 +737,56 @@ nav a:hover {
 
   /* ----- Media Query ----- */
 
-@media (max-width: 980px) {
-  .container-but {
-    flex-direction: column;
-    gap: 20px;
-    padding-left: 60px;
-    top: 50px;
-    padding-bottom: 150px;
-  }
-  .form-but,
-  .container-but .img-but img {
-    width: 100%; 
-  }
- .form-but button {
- margin-left: 10px;
- }
 
-}
+  @media (max-width: 980px) {
+    .container-but {
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 60px;
+      top: 50px;
+      padding-bottom: 150px;
+    }
+    .form-but, .container-but .img-but img {
+      width: 100%; 
+    }
+   
+  }
+
+  @media (max-width: 768px) {
+    .form-but {
+      min-width: 80%;
+      height: auto;
+      padding: 15px;
+    }
+    .input-box i {
+      left: 10px;
+    }
+    .form-but .input-sign {
+      font-size: 14px;
+      padding-left: 45px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-but {
+      min-width: 100%;
+      padding: 10px;
+    }
+    .input-box i {
+      left: 5px;
+    }
+    .form-but .input-sign {
+      padding-left: 40px;
+      font-size: 14px;
+    }
+    .form-but .check {
+      font-size: 14px;
+    }
+    .form-but button {
+      font-size: 14px;
+    }
+  }
+
  /*----  end Sign up---- */
 
 
@@ -941,7 +990,7 @@ height:500px;
 /* الاسئله المكررره */
 
 .text {
-  padding-top: 70px;
+  padding-top: 80px;
   padding-bottom: 100px;
 }
 .contaiiner{
@@ -978,12 +1027,32 @@ width: 1170px;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.66);
   text-align: center;
   position: relative;
+margin-left: 250px;
+line-height:2;
 
 }
 
+
+
+.text::before {
+  content: "";
+  position: absolute;
+  background-image:url(../images/world_faded.svg);
+  bottom: -1000px; 
+  left: 0;
+  width: 100%;
+  height: 200px; 
+  background-position: center;
+  background-size: cover;
+   background-size:100%;  
+}
+
+
+
+
 .text .contaiiner::before {
   content: "";
-background-image: url(/AbdoCenter/images/world.svg);
+background-image: url(../AbdoCenter/images/world.svg);
 background-size: cover;
   position: absolute;
 width: 100%;
@@ -996,20 +1065,28 @@ height: 100%;
 
 .text .contaiiner .center {
   text-align: center;
-  font-weight: bold;
+  font-weight: 400;
+font-size: 15px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 .text .contaiiner .contant {
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
   line-height: 2;
   flex-wrap: wrap;
  }
+
+
+
+
+
+
 /* شروط الاستخدام */ 
 .terms {
-  padding-top: 70px;
+  padding-top: 80px;
   padding-bottom: 100px;
+  z-index: -3; 
 }
 .terms .contaiiner {
   text-align: center;
@@ -1017,10 +1094,12 @@ height: 100%;
 color: white;
 border-radius: 20px;
 box-shadow: 0 0 10px rgb(0, 0, 0, 0.66);
-line-height: 2;
+line-height:3;
+font-size: 15px;
 position: relative;
 }
 
+<<<<<<< HEAD
 .terms .contaiiner::before {
   content: "";
 background-image: url(../AbdoCenter/images/world.svg);
@@ -1033,14 +1112,32 @@ height: 100%;
   right: 500px;
   z-index: -1;
   } 
+=======
+>>>>>>> 8ccce051a9cc5a4fa93c48de01689fc74e1844ea
 
 .terms .container p  span {
-  font-weight: bold;
-  font-size: 25px;
+  font-weight:400;
+  /* font-size: 20px; */
 }
 .terms .contaiiner .left {
   text-align: left;
 }
+
+
+.terms::before {
+  content: "";
+  position: absolute;
+  background-image:url(../images/world_faded.svg);
+  bottom: -850px; 
+  left: 0;
+  width: 100%;
+  height: 200px; 
+  background-position: center;
+  background-size: cover;
+   background-size:100%;  
+}
+
+
 
 /* ----start footer---- */
   footer {
@@ -1126,6 +1223,10 @@ height: 100%;
     footer .container .link {
       padding-right: 0;
     }
+    
+    footer .payment img {
+      width: 150px;
+          }
   }
   /* ---- end footer----  */
   

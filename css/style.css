@@ -1032,8 +1032,6 @@ line-height:2;
 
 }
 
-
-
 .text::before {
   content: "";
   position: absolute;
@@ -1046,9 +1044,6 @@ line-height:2;
   background-size: cover;
    background-size:100%;  
 }
-
-
-
 
 .text .contaiiner::before {
   content: "";
@@ -1076,12 +1071,6 @@ font-size: 15px;
   line-height: 2;
   flex-wrap: wrap;
  }
-
-
-
-
-
-
 /* شروط الاستخدام */ 
 .terms {
   padding-top: 80px;
@@ -1099,7 +1088,6 @@ font-size: 15px;
 position: relative;
 }
 
-<<<<<<< HEAD
 .terms .contaiiner::before {
   content: "";
 background-image: url(../AbdoCenter/images/world.svg);
@@ -1112,8 +1100,6 @@ height: 100%;
   right: 500px;
   z-index: -1;
   } 
-=======
->>>>>>> 8ccce051a9cc5a4fa93c48de01689fc74e1844ea
 
 .terms .container p  span {
   font-weight:400;
@@ -1122,7 +1108,6 @@ height: 100%;
 .terms .contaiiner .left {
   text-align: left;
 }
-
 
 .terms::before {
   content: "";

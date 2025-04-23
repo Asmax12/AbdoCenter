@@ -605,7 +605,6 @@ nav a:hover {
 
 
 /* ----  start Sign up ---- */
-/* Made By Asmaa */
 
 
 .button-sign-up {
@@ -620,10 +619,10 @@ nav a:hover {
  display: flex;
  justify-content: center;
  align-items: center;
- /* gap: 30px; */
+ gap: 50px;
  height: auto;
  position: relative;
- top: 80px;
+ top: 100px;
  padding-bottom: 200px;
  padding-left: 50px;
  padding-right: 50px;
@@ -639,7 +638,7 @@ nav a:hover {
   flex-direction: column;
   gap: 20px;
   min-width: 38%;
-  height: 880px;
+  height: 820px;
   border-radius: 20px;
   margin: 20px;
   margin-top: -30px;
@@ -773,7 +772,7 @@ nav a:hover {
       padding: 10px;
     }
     .input-box i {
-      left: 5px;
+      left: 15px;
     }
     .form-but .input-sign {
       padding-left: 40px;
@@ -786,6 +785,7 @@ nav a:hover {
       font-size: 14px;
     }
   }
+/* Made By Asmaa */
 
  /*----  end Sign up---- */
 
